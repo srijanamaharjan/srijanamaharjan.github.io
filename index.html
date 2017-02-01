@@ -507,17 +507,17 @@
     </div>
     <div class="col-md-8 col-md-offset-2">
       <h3>Leave me a message</h3>
-      <form name="sendMessage" id="contactForm" novalidate action="https://www.enformed.io/oic3s4nu" method="POST" >
+      <form name="sendMessage" id="contactForm" novalidate action="https://formspree.io/your@email.com" method="POST" >
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+              <input type="text" id="name" class="form-control" placeholder="Name" required="required" name="name">
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+              <input type="email" id="email" class="form-control" placeholder="Email" required="required" name="email">
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -528,6 +528,7 @@
         </div>
         <div id="success"></div>
         <input type="hidden" name="*redirect" value="https://srijanamaharjan.github.io" />
+        <input type="hidden" name="*reply" value="@enformed.io" />
         <button type="submit" class="btn btn-default">Send Message</button>
       </form>
       <div class="social">
